@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Mouse Event</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: #f2f2f2;
+            font-family: Arial;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        img {
+            width: 600px;
+            max-width: 90%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Car Animation</h1>
+    <p>Move your mouse over the car!</p>
+
+    <img id="car"
+         src="car.png"
+         onmouseover="carMove()"
+         onmouseout="carStop()">
+
+    <script>
+        function carMove() {
+            document.getElementById("car").src = "car.gif";
+        }
+
+        function carStop() {
+            document.getElementById("car").src = "car.png";
+        }
+    </script>
+
+</body>
+</html>
