@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulb Mouse Events</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: #f5f5f5;
+            font-family: Arial;
+        }
+
+        img {
+            width: 250px;
+            height: 300px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Bulb On Off</h1>
+    <p>Move mouse over the bulb</p>
+
+    <img id="bulb"
+         src="https://img.magnific.com/free-vector/energy-saving-lightbulb-isolated_1284-41849.jpg?semt=ais_hybrid&w=740&q=80"
+         onmouseover="bulbOn()"
+         onmouseout="bulbOff()">
+
+    <script>
+        function bulbOn() {
+            document.getElementById("bulb").src = "https://img.magnific.com/free-vector/realistic-lit-light-bulb-isolated_1284-41774.jpg?semt=ais_hybrid&w=740&q=80";
+        }
+
+        function bulbOff() {
+            document.getElementById("bulb").src = "https://img.magnific.com/free-vector/energy-saving-lightbulb-isolated_1284-41849.jpg?semt=ais_hybrid&w=740&q=80";
+        }
+    </script>
+
+</body>
+</html>
